@@ -1,0 +1,5 @@
+<h2>Selecione um plano</h2>
+
+<button class="button" (click)="toggleDependents()">Ativar/desativar dependentes</button>
+
+<app-plan-form [hasDependents]="hasDependents" [Submit]="handleSubmit"></app-plan-form>

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.dominiodoprojeto.com.br/sitemap.xml

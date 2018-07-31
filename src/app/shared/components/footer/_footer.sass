@@ -1,0 +1,23 @@
+@import '~styles/tools/mixins'
+
+.footer
+    height: 20px
+    padding: 10px
+
+    .disclaimer
+        font-size: 10px
+
++mq('tablet', 'max')
+    .footer
+        background-position: center
+        bottom: 0
+        position: absolute
+        width: 100%
+
++mq('tablet')
+    .footer
+        bottom: 10px
+        left: 0
+        position: absolute
+        width: 100%
+        z-index: 1

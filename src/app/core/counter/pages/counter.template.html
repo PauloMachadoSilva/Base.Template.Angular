@@ -1,0 +1,45 @@
+<div class="page">
+    <h3>Contador de clicks</h3>
+    <div>
+        <app-counter-button label="Click aqui"></app-counter-button>
+    </div>
+    <br><br>
+    <h3>Pipes</h3>
+    <table width="100%">
+        <tr>
+            <th>Valor</th>
+            <th>Pipe</th>
+            <th>Resultado</th>
+        </tr>
+        <tr>
+            <td>10000000</td>
+            <td>brazilianCurrency</td>
+            <td>{{ 10000000 | brazilianCurrency }}</td>
+        </tr>
+        <tr>
+            <td>'20'</td>
+            <td>brazilianCurrency</td>
+            <td>{{ '20' | brazilianCurrency }}</td>
+        </tr>
+        <tr>
+            <td>20.999999</td>
+            <td>brazilianCurrency</td>
+            <td>{{ 20.999999 | brazilianCurrency }}</td>
+        </tr>
+        <tr>
+            <td>'20456.2'</td>
+            <td>brazilianCurrency</td>
+            <td>{{ '20456.2' | brazilianCurrency }}</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>currency:'BRL':'symbol':'1.2-2'</td>
+            <td>{{ 20 | currency:'BRL':'symbol':'1.2-2' }}</td>
+        </tr>
+        <tr>
+            <td>20.999999</td>
+            <td>currency:'BRL':'symbol':'1.2-2'</td>
+            <td>{{ 20.999999 | currency:'BRL':'symbol':'1.2-2' }}</td>
+        </tr>
+    </table>
+</div>

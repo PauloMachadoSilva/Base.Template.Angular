@@ -1,0 +1,43 @@
+<form
+    (ngSubmit)="handleSubmit()"
+    [formGroup]="planForm">
+
+    <div>
+        <label>
+            Plano:
+            <label class="center-block"><input type="radio" formControlName="plan" value="4gb">4GB</label>
+            <label class="center-block"><input type="radio" formControlName="plan" value="5gb">5GB</label>
+            <label class="center-block"><input type="radio" formControlName="plan" value="6gb">6GB</label>
+        </label>
+    </div>
+
+    <div>
+        <label>
+            Nome:
+            <input formControlName="name">
+        </label>
+    </div>
+
+    <button
+        *ngIf="hasDependents"
+        (click)="addDependent()"
+    >
+        Adicionar dependente
+    </button>
+
+    <div
+        *ngIf="hasDependents && dependents"
+        formArrayName="dependents">
+        <div *ngFor="let dependent of dependents.controls; let i=index">
+            <h2>Dependents #{{i + 1}}</h2>
+            <app-dependent-fields [group]="dependent"></app-dependent-fields>
+        </div>
+    </div>
+
+    <button
+        class="button"
+        type="submit"
+    >
+        Enviar
+    </button>
+</form>

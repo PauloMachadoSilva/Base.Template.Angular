@@ -1,0 +1,12 @@
+<div [formGroup]="group">
+    <div>
+        <label>
+            Forma de pagamento:
+            <select formControlName="payment">
+                <option selected value>Selecione uma forma de pagamento</option>
+                <option value="boleto">Boleto R$ 40,00</option>
+                <option value="debito">Débito automático R$ 36,00</option>
+            </select>
+        </label>
+    </div>
+</div>

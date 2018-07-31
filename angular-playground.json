@@ -1,0 +1,6 @@
+{
+    "angularCli": {
+        "appName": "base-template-angular"
+    },
+    "sourceRoot": "./src"
+}
